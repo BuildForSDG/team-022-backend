@@ -1,13 +1,9 @@
 {
-  "name": "js-starter",
+  "name": "team-022-backend",
   "version": "0.0.1",
-  "description": "A boilerplate for starting js code",
-  "keywords": [
-    "js-starter",
-    "boilerplate"
-  ],
+  "description": "barebones setup for JavaScript / Node projects replace this with a one-liner phrase describing this project or app",
   "private": false,
-  "main": "dist/index.js",
+  "main": "server.js",
   "types": "dist/index.d.ts",
   "directories": {
     "test": "__tests__"
@@ -19,20 +15,23 @@
     "lint": "eslint \"src/**/*.js\"",
     "start": "parcel ./src/index.html"
   },
-  "author": {
-    "name": "Build For SDG",
-    "email": "buildforsdg@andela.com"
-  },
+  "author": "Build For SDG <buildforsdg@andela.com>",
   "homepage": "https://github.com/BuildForSDG/js-starter#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/BuildForSDG/js-starter.git"
+    "url": "git+https://github.com/BuildForSDG/js-starter.git"
   },
   "bugs": {
     "url": "https://github.com/BuildForSDG/js-starter/issues"
   },
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.13",
+    "mongoose-unique-validator": "^2.0.3"
+  },
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.5",
@@ -41,7 +40,7 @@
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-plugin-import": "^2.20.2",
     "jest": "^25.4.0",
-    "parcel-bundler": "^1.12.4"
+    "supertest": "^4.0.2"
   },
   "browserslist": [
     "last 1 Chrome versions"
